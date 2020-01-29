@@ -27,6 +27,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        /*
+        - basePath defaults to `/`
+        - contentPath defaults to `content/posts`
+        - assetPath defaults to `content/assets`
+        - mdx defaults to `true`
+        */
+        basePath: `/blog`,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
